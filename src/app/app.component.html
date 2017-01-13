@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <a href="">Graph and skills</a>
+  <a href="">Experience</a>
+  <a href="">Education</a>
+  <a href="">About Me</a>
+</div>
+<div>
+  Graph with skills here:
+</div>
+<div>
+   About my skills listed from id here:
+	<ul>
+		  <li class='skills' *ngFor='let skill of skills; let i = index'>
+        <span>{{skill.title}}</span>
+        <span>{{skill.description}}</span>
+      </li>
+	</ul>
+</div>
