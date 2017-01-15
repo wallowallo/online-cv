@@ -1,4 +1,7 @@
 <div>
+	<h1>Welcome to My CV:</h1>
+</div>
+<div>
   <a href="">Graph and skills</a>
   <a href="">Experience</a>
   <a href="">Education</a>
@@ -11,8 +14,9 @@
    About my skills listed from id here:
 	<ul>
 		  <li class='skills' *ngFor='let skill of skills; let i = index'>
-        <span>{{skill.title}}</span>
-        <span>{{skill.description}}</span>
+        <span>Skill: {{skill.skill}}</span>
+        <span>Level: {{skill.level}}</span>
+        <span>Note: {{skill.note}}</span>
       </li>
 	</ul>
 </div>

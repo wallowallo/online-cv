@@ -1,6 +1,7 @@
 export class Skill {
     constructor(
-        public title: string,
-          public description: string) { }
+        public skill: string,
+        public level: string,
+          public note: string) { }
 }
 
