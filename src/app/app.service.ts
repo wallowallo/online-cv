@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class AppService {
-  private skillsUrl = 'http://localhost:3000';
+  private skillsUrl = 'add route';
 
   constructor (private http: Http) {}
 
