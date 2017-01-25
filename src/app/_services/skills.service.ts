@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import { Headers, RequestOptions } from '@angular/http';
+import { Http, Response, Headers, RequestOptions } from '@angular/http';
 
 import { Skill } from '../_models/skill';
 import { Observable } from 'rxjs/Observable';
@@ -8,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class SkillsService {
-  private skillsUrl = '../cv';
+  private skillsUrl = 'app/cv.json';
 
   constructor (private http: Http) {}
 
