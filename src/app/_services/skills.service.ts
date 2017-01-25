@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
+import { Headers, RequestOptions } from '@angular/http';
 
 import { Skill } from '../_models/skill';
 import { Observable } from 'rxjs/Observable';
@@ -7,7 +8,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class SkillsService {
-  private skillsUrl = '../cv.json';
+  private skillsUrl = '../cv';
 
   constructor (private http: Http) {}
 
@@ -19,7 +20,7 @@ export class SkillsService {
 
   private extractData(res: Response) {
      let body = res.json();
-     return body.data || { };
+     return body.skills || { };
   }
 
   private handleError (error: Response | any) {

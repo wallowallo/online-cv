@@ -9,18 +9,19 @@ import { Skill } from '../_models/skill';
 @Component({
   moduleId: 'module.id',
   selector: 'app-graph',
-  templateUrl: './graph.component.html'
+  templateUrl: './graph.component.html',
+  providers: [ SkillsService ]
 })
 export class GraphComponent implements OnInit {
   errorMessage: string;
 	skills: Skill[];
 
-  constructor (private SkillsService: SkillsService) {}
+  constructor (private skillsService: SkillsService) {}
 
 	ngOnInit() { this.getSkill(); }
 
 	getSkill() {
-		this.SkillsService.getSkill()
+		this.skillsService.getSkill()
 										.subscribe(
 											 skills => this.skills = skills,
 											 error => this.errorMessage = <any>error
