@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  moduleId: 'module.id',
   selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  templateUrl: './education.component.html'
 })
 export class EducationComponent implements OnInit {
 

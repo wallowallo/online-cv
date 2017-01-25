@@ -1,3 +1,13 @@
-<p>
-  graph works!
-</p>
+<div>
+  Graph with skills here:
+</div>
+<div>
+   About my skills listed from id here:
+	<ul>
+		  <li class='skills' *ngFor='let skill of skills; let i = index'>
+        <span>Skill: {{skill.skill}}</span>
+        <span>Level: {{skill.level}}</span>
+        <span>Note: {{skill.note}}</span>
+      </li>
+	</ul>
+</div>

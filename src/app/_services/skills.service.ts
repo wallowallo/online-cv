@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
-import { Skill } from './skill';
+import { Skill } from '../_models/skill';
 import { Observable } from 'rxjs/Observable';
 
 
 @Injectable()
-export class AppService {
-  private skillsUrl = 'add route';
+export class SkillsService {
+  private skillsUrl = '../cv.json';
 
   constructor (private http: Http) {}
 
