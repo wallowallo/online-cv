@@ -8,8 +8,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { GraphComponent } from './graph/graph.component';
 import { EducationComponent } from './education/education.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
-import { SkillsService, AboutMeService } from './_services/index';
+import { SkillsService, AboutMeService, EducationService, ExperienceService } from './_services/index';
 
 import { routing } from './_routing/routing';
 
@@ -19,7 +20,8 @@ import { routing } from './_routing/routing';
     AboutMeComponent,
     ExperienceComponent,
     GraphComponent,
-    EducationComponent
+    EducationComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,9 @@ import { routing } from './_routing/routing';
   ],
   providers: [
     SkillsService,
-    AboutMeService
+    AboutMeService,
+    EducationService,
+    ExperienceService
   ],
   bootstrap: [AppComponent]
 })

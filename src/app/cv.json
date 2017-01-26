@@ -16,5 +16,7 @@
     {"skill":"Agile/Lean/Scrum","level": "3/5","note": "Familiar with backlog, sprints, minimal valuable product, product owner, scrum master, creating velocity and splitting concerns."},
     {"skill":"OmniGraffle","level": "2/5","note": "Familiar with links, layers, creating and designing."}
   ],
-  "aboutMe": "Hello this is a test"
+  "aboutMe": "Hello this is a test",
+  "experience": "This is my experience",
+  "education": "this is my education"
 }
