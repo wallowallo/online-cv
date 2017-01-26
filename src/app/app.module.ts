@@ -9,7 +9,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { GraphComponent } from './graph/graph.component';
 import { EducationComponent } from './education/education.component';
 
-import { SkillsService } from './_services/index';
+import { SkillsService, AboutMeService } from './_services/index';
 
 import { routing } from './_routing/routing';
 
@@ -28,7 +28,8 @@ import { routing } from './_routing/routing';
     routing
   ],
   providers: [
-    SkillsService
+    SkillsService,
+    AboutMeService
   ],
   bootstrap: [AppComponent]
 })
