@@ -1,19 +1,19 @@
 {
   "skills": [
-    {"skill":"Angular2","level": "3/5","note": "merp"},
-    {"skill":"ExpressJS","level": "3/5","note": "merp"},
-    {"skill":"NodeJS","level": "2/5","note": "merp"},
-    {"skill":"MongoDB","level": "2/5","note": "merp"},
-    {"skill":"Typescript","level": "3/5","note": "merp"},
-    {"skill":"JavaScript","level": "3/5","note": "merp"},
-    {"skill":"Git","level": "3/5","note": "merp"},
-    {"skill":"Bash","level": "3/5","note": "merp"},
-    {"skill":"Tachyons","level": "3/5","note": "merp"},
-    {"skill":"HTML","level": "3/5","note": "merp"},
-    {"skill":"CSS","level": "3/5","note": "merp"},
-    {"skill":"Bootstrap","level": "2/5","note": "merp"},
-    {"skill":"Webpack","level": "2/5","note": "merp"},
-    {"skill":"Agile/Lean/Scrum","level": "3/5","note": "merp"},
-    {"skill":"OmniGraffle","level": "2/5","note": "merp"}
+    {"skill":"Angular2","level": "3/5","note": "Familiar with Form Builder, http, routing, architecture/organizing, templates, dependencies, authentication and observables"},
+    {"skill":"ExpressJS","level": "3/5","note": "Familiar with http req/res, saving to a DB, retrieving from a DB, deleting from the DB, searching in the DB, mongoose and passport"},
+    {"skill":"NodeJS","level": "3/5","note": "Familiar with npm and serving applications."},
+    {"skill":"MongoDB","level": "2/5","note": "Familiar with setting up mongo, importing data and saving/deleting/getting data."},
+    {"skill":"Typescript","level": "3/5","note": "Familiar with classes, implementations, super, constructor, instances and types."},
+    {"skill":"JavaScript","level": "3/5","note": "Familiar with scope, block, function paramaters, functional JS, return, querySelector and variables."},
+    {"skill":"Git","level": "3/5","note": "Familiar with init, add, commit, push, clone, pull request and forking."},
+    {"skill":"Bash","level": "3/5","note": "Familiar with tmux, navigating to folder, making folders/files, removing files, install with brew/npm and creating/navigating/exiting tabs."},
+    {"skill":"Tachyons","level": "3/5","note": "Familiar with responsive design and standard css properties."},
+    {"skill":"HTML","level": "3/5","note": "Familiar with standard html."},
+    {"skill":"CSS","level": "3/5","note": "Familiar with targeting by id/class/tag, show/hide and standard CSS properties."},
+    {"skill":"Bootstrap","level": "2/5","note": ""},
+    {"skill":"Webpack","level": "2/5","note": "Familiar with sync and async."},
+    {"skill":"Agile/Lean/Scrum","level": "3/5","note": "Familiar with backlog, sprints, minimal valuable product, product owner, scrum master, creating velocity and splitting concerns."},
+    {"skill":"OmniGraffle","level": "2/5","note": "Familiar with links, layers, creating and designing."}
   ]
 }
