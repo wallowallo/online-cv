@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import '../_helpers/rxjs-operators';
-
+import { Observable } from 'rxjs/Observable';
 import { SkillsService } from '../_services/index';
 import { Skill } from '../_models/skill';
 
@@ -13,35 +13,46 @@ import { Skill } from '../_models/skill';
   providers: [ SkillsService ]
 })
 export class GraphComponent implements OnInit {
+  public label: string[] = [];
+  public level: number[] = [];
+  public radarChartType:string = 'radar';
   errorMessage: string;
 	skills: Skill[];
 
   constructor (private skillsService: SkillsService) {}
 
-	ngOnInit() { this.getSkill(); }
+	ngOnInit() {
+    this.getSkill();
+    this.getLabel();
+    this.getLevel();
+   }
 
-	getSkill() {
-		this.skillsService.getSkill()
-										.subscribe(
-											 skills => this.skills = skills,
-											 error => this.errorMessage = <any>error
-										);
-	}
+   public radarData: any = [
+     {data: [3,3,3,2,3,3,3,3,3,3,3,2,2,3,2], label:"Current Skill level"},
+     {data: [4,4,4,3,4,4,4,4,4,4,4,3,4,4,3], label:"Desired level"},
+   {data: [0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5], label:"Levels"}]
 
-  public radarChartLabels:string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
-
-  public radarChartData:any = [
-    {data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A'},
-    {data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B'}
-  ];
-  public radarChartType:string = 'radar';
-
-
-  public chartClicked(e:any):void {
-    console.log(e);
+  getSkill() {
+    this.skillsService.getSkill()
+                      .subscribe(
+                        skills => this.skills = skills,
+                        error => this.errorMessage = <any>error
+                      );
   }
 
-  public chartHovered(e:any):void {
-    console.log(e);
+  getLabel() {
+    this.skillsService.getLabel()
+                      .subscribe(
+                        skills => this.label = skills.map(skills => skills.skill),
+                        error => this.errorMessage = <any>error
+                      );
+   }
+
+  getLevel() {
+    this.skillsService.getLevel()
+                      .subscribe(
+                        skills => this.level = skills.map(skills => parseInt(skills.level)),
+                        error => this.errorMessage = <any>error
+                      );
   }
 }

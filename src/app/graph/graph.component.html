@@ -1,16 +1,17 @@
 <div>
   Graph with skills here:
 </div>
+<input type="button" class="graph" value="Start Graph">
 <div style="display: block">
   <canvas baseChart
-          [datasets]="radarChartData"
-          [labels]="radarChartLabels"
+          [datasets]="radarData"
+          [labels]="label"
           [chartType]="radarChartType"
-          (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
+          (chartHover)="chartHovered"
+          (chartClick)="chartClicked"></canvas>
 </div>
 <div>
-   About my skills listed from id here:
+   About my skills listed here:
 	<ul>
 		  <li class='skills' *ngFor='let skill of skills; let i = index'>
         <span>Skill: {{skill.skill}}</span>

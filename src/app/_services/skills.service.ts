@@ -17,6 +17,18 @@ export class SkillsService {
 										.catch(this.handleError);
   }
 
+  getLabel(): Observable<any> {
+    return this.http.get(this.skillsUrl)
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
+  getLevel(): Observable<any> {
+    return this.http.get(this.skillsUrl)
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
   private extractData(res: Response) {
      let body = res.json();
      return body.skills || { };
