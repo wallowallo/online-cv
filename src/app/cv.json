@@ -18,5 +18,24 @@
   ],
   "aboutMe": "Hello this is a test",
   "experience": "This is my experience",
-  "education": "this is my education"
+  "education": "this is my education",
+  "courses": [
+    {"course":"rangle.io","title":"Angular Online Training: January 2017 Sessions"},
+    {"course":"rangle.io","title":"Angular Online Training: September 2016 Sessions"},
+    {"course":"egghead.io","title":"Introduction to Reactive Programming"},
+    {"course":"egghead.io","title":"Step-by-Step Async JavaScript with RxJS"},
+    {"course":"egghead.io","title":"Getting Started with Express.js"},
+    {"course":"egghead.io","title":"Up and Running with TypeScript"},
+    {"course":"egghead.io","title":"Use Types Effectively in TypeScript"},
+    {"course":"codeschool.com","title":"Building Redux style Applications with Angular2, RxJS and ngrx/store"},
+    {"course":"codeschool.com","title":"Try Git"},
+    {"course":"codeschool.com","title":"Git Real"},
+    {"course":"codeschool.com","title":"Front-end Foundations"},
+    {"course":"codeschool.com","title":"Front-end Formations"},
+    {"course":"codeschool.com","title":"Css Cross-Country"},
+    {"course":"codeschool.com","title":"Adventures in Web Animations"},
+    {"course":"codeschool.com","title":"Javascript Road Trip Part 1"},
+    {"course":"codeschool.com","title":"Javascript Road Trip Part 2"},
+    {"course":"codeschool.com","title":"Javascript Road Trip Part 3"}
+  ]
 }
