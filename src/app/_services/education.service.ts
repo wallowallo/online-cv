@@ -14,6 +14,16 @@ export class EducationService {
 										.catch(this.handleError);
   }
 
+  getCourses(): Observable<any> {
+    return this.http.get(this.educationUrl)
+                    .map((res: Response) => {
+                      let body = res.json();
+                      return body.courses || { };
+
+                    })
+                    .catch(this.handleError);
+  }
+
   private extractData(res: Response) {
      let body = res.json();
      return body.education || { };

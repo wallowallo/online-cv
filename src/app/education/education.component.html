@@ -1,3 +1,12 @@
 <p>
   {{education}}
 </p>
+<div>
+   My courses:
+	<ul>
+		  <li class='courses' *ngFor='let course of courses; let i = index'>
+        <span>Course from: {{course.course}}</span>
+        <span>Title: {{course.title}}</span>
+      </li>
+	</ul>
+</div>

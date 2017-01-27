@@ -4,7 +4,7 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import '../_helpers/rxjs-operators';
 
 import { EducationService } from '../_services/index';
-
+import { Course } from '../_models/course';
 
 @Component({
   moduleId: 'module.id',
@@ -15,10 +15,14 @@ import { EducationService } from '../_services/index';
 export class EducationComponent implements OnInit {
   errorMessage: string;
 	education: string;
+  courses: Course[];
 
   constructor (private educationService: EducationService) {}
 
-	ngOnInit() { this.getEducation(); }
+	ngOnInit() {
+    this.getEducation();
+    this.getCourses();
+  }
 
 	getEducation() {
 		this.educationService.getEducation()
@@ -27,4 +31,12 @@ export class EducationComponent implements OnInit {
 											 error => this.errorMessage = <any>error
 										);
 	}
+
+  getCourses() {
+    this.educationService.getCourses()
+                         .subscribe(
+                           courses => this.courses = courses,
+                           error => this.errorMessage = <any>error
+                         );
+  }
 }
