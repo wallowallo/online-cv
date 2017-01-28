@@ -10,7 +10,9 @@ export class EducationService {
 
   getEducation(): Observable<any> {
     return this.http.get(this.educationUrl)
-                    .map(this.extractData)
+                    .map((res: Response) => {
+                        let body = res.json();
+                        return body.education || { };})
 										.catch(this.handleError);
   }
 
@@ -19,14 +21,8 @@ export class EducationService {
                     .map((res: Response) => {
                       let body = res.json();
                       return body.courses || { };
-
                     })
                     .catch(this.handleError);
-  }
-
-  private extractData(res: Response) {
-     let body = res.json();
-     return body.education || { };
   }
 
   private handleError (error: Response | any) {

@@ -14,10 +14,15 @@ import { ExperienceService } from '../_services/index';
 export class ExperienceComponent implements OnInit {
   errorMessage: string;
 	experience: string;
+  descriptions: string[];
+  project:string;
 
   constructor (private experienceService: ExperienceService) {}
 
-	ngOnInit() { this.getExperience(); }
+	ngOnInit() {
+    this.getExperience();
+    this.getProjects();
+  }
 
 	getExperience() {
 		this.experienceService.getExperience()
@@ -26,4 +31,15 @@ export class ExperienceComponent implements OnInit {
 											 error => this.errorMessage = <any>error
 										);
 	}
+
+  getProjects() {
+    this.experienceService.getProjects()
+                    .subscribe(
+                       projects => {
+                         this.project = projects.project;
+                         this.descriptions = projects.description;
+                       },
+                       error => this.errorMessage = <any>error
+                    );
+  }
 }
