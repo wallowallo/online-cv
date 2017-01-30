@@ -16,7 +16,7 @@
     {"skill":"Agile/Lean/Scrum","level": "3","note": "Familiar with backlog, sprints, minimal valuable product, product owner, scrum master, creating velocity and splitting concerns."},
     {"skill":"OmniGraffle","level": "2","note": "Familiar with links, layers, creating and designing."}
   ],
-  "experience": "My Experience:",
+  "experience":"My Experience:",
   "projects":
     {"project":"M.E.A.N Stack To-Do List","description":[
       "Created To-Do List with angular 2",
@@ -27,7 +27,7 @@
       "Using express to handle http req/res",
       "Using mongoose to save/delete/find to mongoDB"
       ]},
-  "education": "My Education:",
+  "education":"My Education:",
   "courses": [
     {"course":"rangle.io","title":"Angular Online Training: January 2017 Sessions"},
     {"course":"rangle.io","title":"Angular Online Training: September 2016 Sessions"},
@@ -56,5 +56,5 @@
     {"workshop":"BitShift","about":"Modern Web Development m/Einar Ingebrigtsen"},
     {"workshop":"BitShift","about":"Never Trust a UX-designer"}
   ],
-  "aboutMe": "Hello this is a test"
+  "aboutMe":"I recently embarked on this adventure called Web Development, and fell in love with the idea that I'm able to create and bring ideas to life through the wonders of HTML, CSS and JS. I believe that through visions, incremental progress, encouraging words and teamwork, we can accomplish great things. I focus on new technologies so that we can give the user the best experience possible. I'm eager to learn more about the processes of the SDLC, teamwork, leadership and I'm more than happy to share what I know so far."
 }
