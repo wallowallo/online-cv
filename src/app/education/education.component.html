@@ -1,12 +1,19 @@
-<p>
-  {{education}}
-</p>
+<h2>{{education}}</h2>
 <div>
-   My courses:
+   <h3>My courses:</h3>
 	<ul>
 		  <li class='courses' *ngFor='let course of courses; let i = index'>
         <span>Course from: {{course.course}}</span>
         <span>Title: {{course.title}}</span>
       </li>
 	</ul>
+</div>
+<div>
+    <h3>Workshops:</h3>
+  <ul>
+      <li class='Workshops' *ngFor='let workshop of workshops; let i = index'>
+        <span>Workshops from: {{workshop.workshop}}</span>
+        <span>About: {{workshop.about}}</span>
+      </li>
+  </ul>
 </div>

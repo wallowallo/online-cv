@@ -25,6 +25,15 @@ export class EducationService {
                     .catch(this.handleError);
   }
 
+  getWorkshops(): Observable<any> {
+    return this.http.get(this.educationUrl)
+                    .map((res: Response) => {
+                      let body = res.json();
+                      return body.workshops || { };
+                    })
+                    .catch(this.handleError);
+  }
+
   private handleError (error: Response | any) {
    let errMsg: string;
    if (error instanceof Response) {

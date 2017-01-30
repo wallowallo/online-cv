@@ -1,9 +1,16 @@
-<p>
-  {{experience}}
-</p>
 <div>
-  {{project}}
+  <h2>
+    {{experience}}
+  </h2>
 </div>
-<li *ngFor="let description of descriptions">
-  <span>{{description}}</span>
-</li>
+<div>
+  <h3>
+    Projects:
+  </h3>
+  <div>
+    {{project}}
+  </div>
+  <li *ngFor="let description of descriptions">
+    <span>{{description}}</span>
+  </li>
+</div>

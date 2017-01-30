@@ -16,12 +16,14 @@ export class EducationComponent implements OnInit {
   errorMessage: string;
 	education: string;
   courses: Course[];
+  workshops:string[];
 
   constructor (private educationService: EducationService) {}
 
 	ngOnInit() {
     this.getEducation();
     this.getCourses();
+    this.getWorkshops();
   }
 
 	getEducation() {
@@ -36,6 +38,14 @@ export class EducationComponent implements OnInit {
     this.educationService.getCourses()
                          .subscribe(
                            courses => this.courses = courses,
+                           error => this.errorMessage = <any>error
+                         );
+  }
+
+  getWorkshops() {
+    this.educationService.getWorkshops()
+                         .subscribe(
+                           workshops => this.workshops = workshops,
                            error => this.errorMessage = <any>error
                          );
   }
