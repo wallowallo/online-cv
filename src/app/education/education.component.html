@@ -4,19 +4,21 @@
 </div>
 <div class="text">
    <h3>My courses:</h3>
-	<ul>
-		  <li class='courses' *ngFor='let course of courses; let i = index'>
-        <span>Course from: {{course.course}}</span>
-        <span>Title: {{course.title}}</span>
-      </li>
-	</ul>
+   <md-list>
+		  <md-list-item class='courses' *ngFor='let course of courses; let i = index'>
+        <img md-list-avatar src="class.png" alt="class">
+        <span md-line>Course from: {{course.course}}</span>
+        <span md-line>Title: {{course.title}}</span>
+      </md-list-item>
+    </md-list>
 </div>
 <div class="text">
     <h3>Workshops:</h3>
-  <ul>
-      <li class='Workshops' *ngFor='let workshop of workshops; let i = index'>
-        <span>Workshops from: {{workshop.workshop}}</span>
-        <span>About: {{workshop.about}}</span>
-      </li>
-  </ul>
+   <md-list>
+		  <md-list-item class='workshops' *ngFor='let workshop of workshops; let i = index'>
+        <img md-list-avatar src="assignment.png" alt="assignment">
+        <span md-line>Workshops from: {{workshop.workshop}}</span>
+        <span md-line>About: {{workshop.about}}</span>
+      </md-list-item>
+    </md-list>
 </div>

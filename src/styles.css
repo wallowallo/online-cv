@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
 
+body {
+  margin: 0;
+}
+
 .chart {
   max-width: 950px;
   margin: 40px auto;
@@ -28,11 +32,24 @@ img {
   margin: 40px auto;
 }
 
-li {
+.subject {
+  margin: 10px 50px;
   padding: 10px;
 }
 
-span {
-  display: block;
-  margin: 5px;
+.content {
+  margin: 10px 50px;
+  padding: 10px;
+}
+
+textarea {
+  margin: 0 50px;
+}
+
+.tekst {
+  margin: 10px 50px;
+}
+
+i {
+  padding: 5px;
 }

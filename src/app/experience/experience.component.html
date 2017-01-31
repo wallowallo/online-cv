@@ -11,7 +11,10 @@
   <div>
     {{project}}
   </div>
-  <li *ngFor="let description of descriptions">
-    <span>{{description}}</span>
-  </li>
+  <md-list dense>
+    <md-list-item *ngFor="let description of descriptions">
+      <img md-list-avatar src="checkmark.png" alt="checkmark">
+      <span>{{description}}</span>
+    </md-list-item>
+  </md-list>
 </div>

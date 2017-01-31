@@ -8,11 +8,12 @@
 </div>
 <div class="text">
   <h2>My Skills:</h2>
-	<ul>
-		  <li class='skills' *ngFor='let skill of skills; let i = index'>
-        <span>Skill: {{skill.skill}}</span>
-        <span>Level: {{skill.level}}</span>
-        <span>Note: {{skill.note}}</span>
-      </li>
-	</ul>
+	<md-list>
+    <md-list-item *ngFor="let skill of skills" >
+      <img md-list-avatar src="checkcircle.png" alt="check circle">
+      <span md-line>Skill: {{skill.skill}}</span>
+      <span md-line>Level: {{skill.level}}</span>
+      <span md-line>Note: {{skill.note}}</span>
+    </md-list-item>
+  </md-list>
 </div>
