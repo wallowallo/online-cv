@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ChartsModule } from 'ng2-charts';
+import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -10,6 +11,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { GraphComponent } from './graph/graph.component';
 import { EducationComponent } from './education/education.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import 'hammerjs';
 
 import { SkillsService, AboutMeService, EducationService, ExperienceService } from './_services/index';
 
@@ -29,7 +31,8 @@ import { routing } from './_routing/routing';
     FormsModule,
     HttpModule,
     routing,
-    ChartsModule
+    ChartsModule,
+    MaterialModule.forRoot()
   ],
   providers: [
     SkillsService,

@@ -1,12 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+.chart {
+  max-width: 950px;
+  margin: 40px auto;
+}
+
+.link:link, .link:visited {
+  background-color: DarkViolet;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: block;
+}
+
+.link:hover, .link:active {
+  background-color: purple;
+}
+
 img {
   border-radius: 50%;
 }
 
-div {
+.text {
   max-width: 600px;
+  margin: 40px auto;
 }
 
-p {
-  max-width: 600px;
+li {
+  padding: 10px;
+}
+
+span {
+  display: block;
+  margin: 5px;
 }

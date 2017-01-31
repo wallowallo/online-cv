@@ -1,7 +1,4 @@
-<div>
-  Graph with skills here:
-</div>
-<div style="display: block">
+<div class="chart" style="display: block">
   <canvas baseChart
           [datasets]="radarData"
           [labels]="label"
@@ -9,8 +6,8 @@
           (chartHover)="chartHovered"
           (chartClick)="chartClicked"></canvas>
 </div>
-<div>
-   About my skills listed here:
+<div class="text">
+  <h2>My Skills:</h2>
 	<ul>
 		  <li class='skills' *ngFor='let skill of skills; let i = index'>
         <span>Skill: {{skill.skill}}</span>
