@@ -1,12 +1,15 @@
 <div class="text">
-  <h2>
-  <i class="material-icons">mail_outline</i>
-  Send Me An Email:
-  </h2>
-  <md-input-container class="subject">
-    <input md-input type="text" id="subject" placeholder="Subject of the email">
-  </md-input-container>
-  <md-input-container class="content">
-    <textarea md-input rows="20" cols="100" placeholder="Email text"></textarea>
-</md-input-container>
+  <form #sendMailForm="ngForm" (ngSubmit)="send(sendMailForm)">
+    <h2>
+    <i class="material-icons">mail_outline</i>
+    Send Me An Email:
+    </h2>
+    <md-input-container class="subject">
+      <input md-input type="text" name="subject" placeholder="Subject of the email" ngModel required>
+    </md-input-container>
+    <md-input-container class="content">
+      <textarea md-input name="message" rows="20" cols="100" placeholder="Email text" ngModel required></textarea>
+    </md-input-container>
+    <button type="submit">Send</button>
+  </form>
 </div>
