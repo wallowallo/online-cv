@@ -26,7 +26,7 @@ h1 {
   background-color: DarkViolet;
   color: white;
   padding: 14px 25px;
-  text-align: center; 
+  text-align: center;
   text-decoration: none;
   display: block;
 }
@@ -76,4 +76,3 @@ textarea {
 #project {
   padding: 10px 0 0 0;
 }
-
