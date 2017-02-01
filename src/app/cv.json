@@ -8,6 +8,7 @@
     {"skill":"JavaScript","level": "3","note": "Familiar with scope, block, function paramaters, functional JS, return, querySelector and variables."},
     {"skill":"Git","level": "3","note": "Familiar with init, add, commit, push, clone, pull request and forking."},
     {"skill":"Bash","level": "3","note": "Familiar with tmux, navigating to folder, making folders/files, removing files, install with brew/npm and creating/navigating/exiting tabs."},
+    {"skill":"Angular Material","level": "3","note": "Familiar with icons, sidenav, toolbar, input, button and list."},
     {"skill":"Tachyons","level": "3","note": "Familiar with responsive design and standard css properties."},
     {"skill":"HTML","level": "3","note": "Familiar with standard html."},
     {"skill":"CSS","level": "3","note": "Familiar with targeting by id/class/tag, show/hide and standard CSS properties."},
@@ -27,7 +28,7 @@
       "Using express to handle http req/res",
       "Using mongoose to save/delete/find to mongoDB"
       ]},
-  "education":"I have been learning and studying web development from courses, workshops and used resources like codewars.com, google.com, rangle.io to acquire knowledge and implement good/best practices answers and try to understand them.",
+  "education":"I have been learning and studying web development from courses, workshops and used resources like codewars.com, google.com, rangle.io to acquire knowledge and implement good answers/best practices and try to understand them.",
   "courses": [
     {"course":"rangle.io","title":"Angular Online Training: January 2017 Sessions"},
     {"course":"rangle.io","title":"Angular Online Training: September 2016 Sessions"},

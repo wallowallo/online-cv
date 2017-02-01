@@ -38,9 +38,9 @@ export class GraphComponent implements OnInit {
    }
 
    public radarData: any = [
-     {data: [3,3,3,2,3,3,3,3,3,3,3,2,2,3,2], label:"Current Skill level"},
-     {data: [4,4,4,3,4,4,4,4,4,4,4,3,4,4,3], label:"Desired level"},
-     {data: [0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5], label:"Levels"}
+     {data: [3,3,3,2,3,3,3,3,3,3,3,3,2,2,3,2], label:"Current Skill level"},
+     {data: [4,4,4,3,4,4,4,4,4,4,4,4,3,4,4,3], label:"Desired level"},
+     {data: [0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5], label:"Levels"}
     ]
 
   getSkill() {
