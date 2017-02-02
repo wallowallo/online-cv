@@ -10,7 +10,7 @@ import "rxjs/Rx";
 })
 export class ContactMeComponent {
      private mailgunUrl: string = "sandbox8250f0e8beaf48ef9ca0318e4b672279.mailgun.org";
-     private apiKey: string = "key-a2b7f904fa3d820763fdce2208d63873";
+     private apiKey: string = "key-a2b7f904fa3d820763fdce2208d63873";  //TODO: use env variable to keep this secret
 
      public constructor(private http: Http) {
      }
@@ -23,7 +23,7 @@ export class ContactMeComponent {
       let headers = new Headers(
           {
            "Content-Type": "application/x-www-form-urlencoded",
-           "Authorization": "Basic " + btoa("api:" + this.apiKey) //TODO: use env variable to keep this secret
+           "Authorization": "Basic " + btoa("api:" + this.apiKey)  
           }
       );
       let options = new RequestOptions({ headers: headers });
@@ -33,6 +33,7 @@ export class ContactMeComponent {
                .do(result => console.log("RESULT: ", JSON.stringify(result)))
                .subscribe(result => {
                  console.log("SENT!");
+                 alert("Email Successfully Sent!")
                }, error => {
                  console.log(error);
                });
