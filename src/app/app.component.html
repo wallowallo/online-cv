@@ -6,11 +6,11 @@
 </md-toolbar>
 <md-sidenav-container class="example-sidenav-fab-container">
   <md-sidenav #sidenav mode="side" opened="true">
-		<a class="link" href="/graph">Graph</a>
-		<a class="link" href="/experience">Experience</a>
-		<a class="link" href="/education">Education</a>
-		<a class="link" href="/about">About Me</a>
-		<a class="link" href="/contact-me">Contact Me</a>
+		<a class="link" [routerLink]="['/']">Graph</a>
+		<a class="link" [routerLink]="['/experience']">Experience</a>
+		<a class="link" [routerLink]="['/education']">Education</a>
+		<a class="link" [routerLink]="['/about']">About Me</a>
+		<a class="link" [routerLink]="['/contact-me']">Contact Me</a>
 		<button md-raised-button (click)="sidenav.toggle()">
 			<i class="material-icons">chevron_left</i>
 		</button>

@@ -7,12 +7,12 @@ import { ExperienceComponent } from '../experience/index';
 import { ContactMeComponent } from '../contact-me/index';
 
 const appRoutes: Routes = [
-  { path: 'graph', component: GraphComponent },
+  { path: '', component: GraphComponent },
   { path: 'experience',  component:  ExperienceComponent},
   { path: 'about', component: AboutMeComponent },
   { path: 'education', component: EducationComponent },
   { path: 'contact-me', component: ContactMeComponent },
-  { path: '**', redirectTo: '/graph' }
+  { path: '**', redirectTo: '/' }
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);
