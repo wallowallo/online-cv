@@ -73,8 +73,21 @@ textarea {
   display: inline-block;
 }
 
-.aboutme {
+p {
   text-align: justify;
+}
+
+.mailHeader {
+	margin: 20px 55px;
+}
+
+.sendButtonn {
+	display: inline-block;
+	margin: 10px 60px;
+}
+
+.note {
+	word-wrap: break-word;
 }
 
 #project {

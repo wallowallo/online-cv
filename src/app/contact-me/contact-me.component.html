@@ -1,6 +1,6 @@
 <div class="text">
   <form #sendMailForm="ngForm" (ngSubmit)="send(sendMailForm)">
-    <h2>
+    <h2 class="mailHeader">
     <i class="material-icons">mail_outline</i>
     Send Me An Email:
     </h2>
@@ -10,6 +10,8 @@
     <md-input-container class="content">
       <textarea md-input name="message" rows="15" cols="100" placeholder="Email text" ngModel required></textarea>
     </md-input-container>
-    <button md-raised-button class="sendButton" type="submit">Send</button>
+    <div class="sendButtonn">
+      <button md-raised-button class="sendButton" type="submit">Send</button>
+    </div>
   </form>
 </div>
