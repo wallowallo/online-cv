@@ -16,7 +16,7 @@ export class EducationComponent implements OnInit {
   errorMessage: string;
 	education: string;
   courses: Course[];
-  workshops:string[];
+  workshops: string[];
 
   constructor (private educationService: EducationService) {}
 

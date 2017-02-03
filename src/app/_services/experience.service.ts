@@ -12,7 +12,7 @@ export class ExperienceService {
   getExperience(): Observable<any> {
     return this.http.get(this.experienceUrl)
                     .map((res: Response) => {
-                      let body = res.json();
+                      const body = res.json();
                       return body.experience || { };
                     })
 										.catch(this.handleError);
@@ -21,7 +21,7 @@ export class ExperienceService {
   getProjects(): Observable<any> {
     return this.http.get(this.experienceUrl)
                     .map((res: Response) => {
-                      let body = res.json();
+                      const body = res.json();
                       return body.projects || { };
                     })
                     .catch(this.handleError);

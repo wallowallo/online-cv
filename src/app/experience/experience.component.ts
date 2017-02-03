@@ -15,7 +15,7 @@ export class ExperienceComponent implements OnInit {
   errorMessage: string;
 	experience: string;
   descriptions: string[];
-  project:string;
+  project: string;
 
   constructor (private experienceService: ExperienceService) {}
 

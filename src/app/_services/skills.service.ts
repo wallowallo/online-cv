@@ -18,7 +18,7 @@ export class SkillsService {
   }
 
   private extractData(res: Response) {
-     let body = res.json();
+     const body = res.json();
      return body.skills || { };
   }
 

@@ -12,14 +12,20 @@ import { Skill } from '../_models/skill';
   templateUrl: './graph.component.html',
   providers: [ SkillsService ]
 })
+
 export class GraphComponent implements OnInit {
   public label: string[] = [];
   public level: number[] = [];
   public getLabels;
   public getLevels;
-  public radarChartType:string = 'radar';
+  public radarChartType = 'radar';
+  public radarData: any = [
+    {data: [3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 3, 2], label: 'Current Skill level'},
+    {data: [4, 4, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4, 3, 4, 4, 3], label: 'Desired level'},
+    {data: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], label: 'Levels'}
+  ];
   errorMessage: string;
-	skills: Skill[];
+ 	skills: Skill[];
 
   constructor (private skillsService: SkillsService) {}
 
@@ -27,26 +33,20 @@ export class GraphComponent implements OnInit {
     this.getSkill();
     this.getLabels = this.skillsService.getSkill()
                       .subscribe(
-                        skills => this.label = skills.map(skills => skills.skill),
+                        skill => this.label = skill.map(a => a.skill),
                         error => this.errorMessage = <any>error
                       );
     this.getLevels = this.skillsService.getSkill()
                       .subscribe(
-                        skills => this.level = skills.map(skills => skills.level),
+                        skil => this.level = skil.map(x => x.level),
                         error => this.errorMessage = <any>error
                       );
-   }
-
-   public radarData: any = [
-     {data: [3,3,3,2,3,3,3,3,3,3,3,3,2,2,3,2], label:"Current Skill level"},
-     {data: [4,4,4,3,4,4,4,4,4,4,4,4,3,4,4,3], label:"Desired level"},
-     {data: [0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5], label:"Levels"}
-    ]
+  }
 
   getSkill() {
     this.skillsService.getSkill()
                       .subscribe(
-                        skills => this.skills = skills,
+                        skill => this.skills = skill,
                         error => this.errorMessage = <any>error
                       );
   }

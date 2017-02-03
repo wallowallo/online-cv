@@ -11,15 +11,16 @@ export class EducationService {
   getEducation(): Observable<any> {
     return this.http.get(this.educationUrl)
                     .map((res: Response) => {
-                        let body = res.json();
-                        return body.education || { };})
+                        const body = res.json();
+                        return body.education || { };
+                    })
 										.catch(this.handleError);
   }
 
   getCourses(): Observable<any> {
     return this.http.get(this.educationUrl)
                     .map((res: Response) => {
-                      let body = res.json();
+                      const body = res.json();
                       return body.courses || { };
                     })
                     .catch(this.handleError);
@@ -28,7 +29,7 @@ export class EducationService {
   getWorkshops(): Observable<any> {
     return this.http.get(this.educationUrl)
                     .map((res: Response) => {
-                      let body = res.json();
+                      const body = res.json();
                       return body.workshops || { };
                     })
                     .catch(this.handleError);
