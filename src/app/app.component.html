@@ -1,5 +1,5 @@
 <md-toolbar color="primary">
-	<button md-button (click)="sidenav.open()">
+	<button md-button (click)="sidenav.toggle()">
 		<i class="material-icons">view_headline</i>
   </button>
 	<h1>My Online CV:</h1>
@@ -11,9 +11,6 @@
 		<a class="link" [routerLink]="['/education']">Education</a>
 		<a class="link" [routerLink]="['/about']">About Me</a>
 		<a class="link" [routerLink]="['/contact-me']">Contact Me</a>
-		<button md-raised-button (click)="sidenav.toggle()">
-			<i class="material-icons">chevron_left</i>
-		</button>
 	 </md-sidenav>
   <router-outlet></router-outlet>
 </md-sidenav-container>
