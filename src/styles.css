@@ -73,6 +73,10 @@ textarea {
   display: inline-block;
 }
 
+.aboutme {
+  text-align: justify;
+}
+
 #project {
   padding: 10px 0 0 0;
 }

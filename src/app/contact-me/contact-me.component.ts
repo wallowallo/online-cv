@@ -35,6 +35,7 @@ export class ContactMeComponent {
                  console.log('SENT!');
                  alert('Email Successfully Sent!');
                }, error => {
+                 alert('Email couldnt be sent, Internal Error!')
                  console.log(error);
                });
     }
