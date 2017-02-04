@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import '../_helpers/rxjs-operators';

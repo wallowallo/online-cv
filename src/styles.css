@@ -15,6 +15,8 @@ h1 {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 26.4px;
+	display:flex;
+	margin-left: 40px;
 }
 
 .chart {
@@ -88,6 +90,18 @@ p {
 
 .note {
 	word-wrap: break-word;
+}
+
+.toggleMenu {
+	line-height: 0 !important;
+}
+
+.footerText {
+	margin: 5px auto;
+}
+
+.footerLink {
+	color: black;
 }
 
 #project {

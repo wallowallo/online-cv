@@ -17,7 +17,7 @@
     {"skill":"Agile/Lean/Scrum","level": "3","note": "Familiar with backlog, sprints, minimal valuable product, product owner, scrum master, creating velocity and splitting concerns."},
     {"skill":"OmniGraffle","level": "2","note": "Familiar with links, layers, creating and designing."}
   ],
-  "experience":"You can also find all my projects and code on my ",
+  "experience":"You can find all my projects and code on my ",
   "projects":
     {"project":"M.E.A.N Stack To-Do List","description":[
       "Created To-Do List with angular 2",

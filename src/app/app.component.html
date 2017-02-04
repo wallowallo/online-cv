@@ -1,8 +1,8 @@
 <md-toolbar color="primary">
-	<button md-button (click)="sidenav.toggle()">
+	<button class="toggleMenu" md-button (click)="sidenav.toggle()">
 		<i class="material-icons">view_headline</i>
   </button>
-	<h1>My Online CV:</h1>
+	<h1 clss="mainHeader">My Online CV:</h1>
 </md-toolbar>
 <md-sidenav-container class="example-sidenav-fab-container">
   <md-sidenav #sidenav mode="side" opened="true">
@@ -14,3 +14,11 @@
 	 </md-sidenav>
   <router-outlet></router-outlet>
 </md-sidenav-container>
+
+<footer>
+  <md-toolbar color="primary">
+    <div class="footerText">
+      My data for this project is fetched from a json file which can be found <a class="footerLink" href="https://github.com/wallowallo/online-cv/blob/master/src/app/cv.json" target="_blank">here.</a>
+    </div>
+  </md-toolbar>
+</footer>
