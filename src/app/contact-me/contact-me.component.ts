@@ -23,7 +23,6 @@ export class ContactMeComponent {
          subject: subject,
          message: text
        }
-       alert(typeof emailjs);
        emailjs.send(service_id, template_id, params)
          .then(function(){
             alert("Sent!");

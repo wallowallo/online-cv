@@ -21,7 +21,7 @@ export class GraphComponent implements OnInit {
   public radarChartType = 'radar';
   public radarData: any = [
     {data: [3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 3, 2], label: 'Current Skill level'},
-    {data: [4, 4, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4, 3, 4, 4, 3], label: 'Desired level'},
+    {data: [4, 4, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4, 3, 4, 4, 3], label: 'Level By 2018'},
     {data: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], label: 'Levels'}
   ];
   errorMessage: string;
