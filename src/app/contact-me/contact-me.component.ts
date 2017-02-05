@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Http, Headers, RequestOptions } from '@angular/http';
+//import { emailjs } from '';
 import 'rxjs/Rx';
+
+declare var emailjs:any;
 
 @Component({
   moduleId: 'module.id',
@@ -23,6 +26,7 @@ export class ContactMeComponent {
          subject: subject,
          message: text
        }
+       alert(typeof emailjs);
        emailjs.send(service_id, template_id, params)
          .then(function(){
             alert("Sent!");
