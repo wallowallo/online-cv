@@ -15,3 +15,27 @@
     </div>
   </form>
 </div>
+
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_cAbzzv59MMOTsGjdgdx8O");
+   })();
+   send(form: NgForm) {
+     const subject = form.value.subject;
+     const text = form.value.message;
+     const service_id = "default_service";
+     const template_id = "template_Ass4sDXO";
+     const obj = {
+       subject: subject,
+       message: text
+     }
+     emailjs.send(service_id, template_id, obj)
+       .then(function(){
+          alert("Sent!");
+        }, function(err) {
+          alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+       });
+    }
+</script>
