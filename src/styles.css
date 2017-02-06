@@ -25,7 +25,6 @@ h1 {
 }
 
 .link:link, .link:visited {
-  background-color: DarkViolet;
   color: white;
   padding: 14px 25px;
   text-align: center;
@@ -102,6 +101,10 @@ p {
 
 .footerLink {
 	color: black;
+}
+
+.sidenav {
+	background-color: MediumPurple
 }
 
 #project {
